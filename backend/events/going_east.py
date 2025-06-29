@@ -29,7 +29,7 @@ def handle_choice(option: str):
             "footer": "The sun is gone. The moon watches in silence."
         }
 
-    elif option == "Keep Walking":
+    elif option == "Keep walking":
         return {
             "title": "------------------------------------- Heading East -------------------------------------",
             "text": (
@@ -58,7 +58,9 @@ def handle_choice(option: str):
             "text": (
                 "The thing lets out a rasping hiss as it collapses at your feet. You stand over it, breathing heavy. Whatever it was, it's dead now."
                 "\n"
+                "\n"
                 "Its body begins to wither almost instantly, the flesh pulling tight across its bones before flaking away like ash caught in a breeze. There’s no blood. No sign it was ever alive in the first place. Just a foul-smelling smear on the forest floor."
+                "\n"
                 "\n"
                 "You take a breath, steady your grip, and keep moving. Vehlmoor lies past this forest, east through the dark."
             ),
