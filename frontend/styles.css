@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: black;
+  color: white;
+  font-family: 'VT323', monospace;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.game-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1000px;
+  height: 95vh;
+  padding: 10px;
+  background-color: black;
+}
+
+.ascii-border {
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  white-space: pre;
+}
+
+.main-container {
+  display: flex;
+  flex: 1;
+  border: 1px dashed white;
+  margin: 5px 0;
+  padding: 10px;
+  gap: 10px;
+}
+
+.left-panel {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.panel-header {
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-bottom: 1px dashed white;
+}
+
+.panel-body {
+  background-color: black;
+  color: white;
+  border: 1px dashed white;
+  padding: 8px;
+  height: 100px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+}
+
+.game-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.story-area {
+  flex: 1;
+  background: black;
+  color: white;
+  border: 1px dashed white;
+  padding: 10px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  margin-bottom: 10px;
+}
+
+.options-area {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.options-area button {
+  font-family: 'VT323', monospace;
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  padding: 8px;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.options-area button:hover {
+  background-color: white;
+  color: black;
+}
+
+.footer-msg {
+  text-align: center;
+  padding-top: 5px;
+  font-size: 16px;
+  border-top: 1px dashed white;
+}
+
+.inventory-panel button {
+  font-family: 'VT323', monospace;
+  font-size: 18px;
+  background-color: black;
+  color: white;
+  border: 1px dashed white;
+  padding: 6px 10px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  margin-bottom: 4px;
+  transition: background-color 0.1s ease, color 0.1s ease;
+}
+
+.inventory-panel button:hover {
+  background-color: white;
+  color: black;
+}
+
+.inventory-panel button.equipped {
+  background-color: #222;
+  color: #939e9a;
+  border-color: #939e9a;
+}
+
+.panel-body::-webkit-scrollbar,
+.story-area::-webkit-scrollbar {
+  width: 8px;
+}
+
+.panel-body::-webkit-scrollbar-thumb,
+.story-area::-webkit-scrollbar-thumb {
+  background-color: #000000;
+  border-radius: 4px;
+}
+
+.panel-body::-webkit-scrollbar-track,
+.story-area::-webkit-scrollbar-track {
+  background-color: #111;
+}
+
+.panel-body {
+  height: 120px;
+  overflow-y: auto;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: #111;
+  border: 1px solid white;
+  padding: 6px 10px;
+  color: white;
+  font-size: 16px;
+  font-family: 'VT323', monospace;
+  max-width: 200px;
+  pointer-events: none;
+  z-index: 999;
+  border-radius: 4px;
+  white-space: pre-wrap;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
