@@ -158,3 +158,20 @@ body {
   height: 120px;
   overflow-y: auto;
 }
+
+.tooltip {
+  position: absolute;
+  background-color: #111;
+  border: 1px solid white;
+  padding: 6px 10px;
+  color: white;
+  font-size: 16px;
+  font-family: 'VT323', monospace;
+  max-width: 200px;
+  pointer-events: none;
+  z-index: 999;
+  border-radius: 4px;
+  white-space: pre-wrap;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
