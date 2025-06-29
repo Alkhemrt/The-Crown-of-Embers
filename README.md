@@ -23,3 +23,15 @@ Install them with:
 
 ```bash
 pip install fastapi uvicorn
+```
+
+---
+
+## ▶️ How to Run
+
+1. Start the backend server with:
+
+   ```bash
+   uvicorn backend.main:app --reload
+
+2. Open index.html in your browser
