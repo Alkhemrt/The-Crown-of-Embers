@@ -81,8 +81,7 @@ async function updatePlayerUI() {
     const data = await res.json();
 
     document.getElementById("stats-panel").textContent =
-    `HP : 100\nXP : 0\nLVL: 1\nGold: ${data.gold}\nDMG : ${data.damage}`;
-
+      `HP : 100\nXP : 0\nLVL: 1\nGold: ${data.gold}\nDMG : ${data.damage}`;
 
     const panel = document.getElementById("inventory-panel");
     panel.innerHTML = "";
@@ -90,11 +89,13 @@ async function updatePlayerUI() {
     if (data.inventory.length === 0) {
       panel.textContent = "(Empty)";
     } else {
+      const tooltip = document.getElementById("tooltip");
+
       data.inventory.forEach(item => {
         const btn = document.createElement("button");
         btn.textContent = item.name + (item.name === data.equipped ? " [E]" : "");
         if (item.name === data.equipped) {
-        btn.classList.add("equipped");
+          btn.classList.add("equipped");
         }
 
         btn.onclick = async () => {
@@ -103,15 +104,33 @@ async function updatePlayerUI() {
           });
           await updatePlayerUI();
         };
+
+        let hoverTimeout;
+        btn.addEventListener("mouseenter", (e) => {
+          hoverTimeout = setTimeout(() => {
+            tooltip.textContent = item.description;
+            const rect = btn.getBoundingClientRect();
+            tooltip.style.left = `${rect.right + 5}px`;
+            tooltip.style.top = `${rect.top}px`;
+            tooltip.style.opacity = 1;
+          }, 300);
+        });
+
+        btn.addEventListener("mouseleave", () => {
+          clearTimeout(hoverTimeout);
+          tooltip.style.opacity = 0;
+        });
+
         panel.appendChild(btn);
         panel.appendChild(document.createElement("br"));
       });
-}
+    }
 
   } catch (err) {
     console.error("Error loading player data", err);
   }
 }
+
 
 window.onload = () => {
   loadEvent("intro_event");
