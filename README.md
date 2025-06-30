@@ -10,7 +10,7 @@
 
 You were a Warden, a forgotten guardian of the Crown. Memory shattered, you must navigate a haunted land to find the crown, or forge a new one in its place.
 
-*(Currently only two events were made so far)*
+*(The game is still a work in progress and some routes still haven't been made)*
 
 ---
 ## ⚙️ Requirements
