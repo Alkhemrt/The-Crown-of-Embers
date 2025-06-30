@@ -1,0 +1,9 @@
+{
+  "id": "traveler_blade",
+  "name": "Traveler's Blade",
+  "description": "Taken from a fallen traveler who never reached Vehlmoor. The blade is plain, but finely kept. It's balanced with a clean edge that hasn't dulled. It feels steady in hand.",
+  "buy_price": 200,
+  "sell_price": 100,
+  "damage": 11,
+  "defense": 1
+}

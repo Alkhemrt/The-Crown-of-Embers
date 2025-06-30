@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Crown of Embers</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="game-wrapper">
+    <pre id="event-title" class="ascii-border top-border">+------------------------------------ The Crown of Embers ------------------------------------+</pre>
+    
+    <div class="main-container">
+      <div class="left-panel">
+        <pre class="panel-header">[STATS]</pre>
+        <pre id="stats-panel" class="panel-body">HP : 100
+XP : 0
+LVL: 1</pre>
+
+        <pre class="panel-header">[INVENTORY]</pre>
+        <div id="inventory-panel" class="panel-body inventory-panel">(Empty)</div>
+      </div>
+
+      <div class="game-panel">
+        <pre id="story-panel" class="story-area">Loading story...</pre>
+        <div id="options-panel" class="options-area"></div>
+      </div>
+    </div>
+
+    <pre class="ascii-border bottom-border">+--------------------------------------------------------------------------------------------+</pre>
+    <div id="footer-msg" class="footer-msg">The crown is gone. The night does not end...</div>
+  </div>
+
+  <script src="script.js"></script>
+  <div id="tooltip" class="tooltip"></div>
+</body>
+</html>
+

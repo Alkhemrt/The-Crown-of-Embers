@@ -1,0 +1,9 @@
+{
+  "id": "rusty_sword",
+  "name": "Rusty Sword",
+  "description": "A sword with a cracked hilt and dulled blade. It has seen better days.",
+  "buy_price": 50,
+  "sell_price": 25,
+  "damage": 5,
+  "defense": 0
+}

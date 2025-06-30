@@ -1,0 +1,30 @@
+{
+  "gold": 92,
+  "inventory": [
+    {
+      "id": "rusty_sword",
+      "name": "Rusty Sword",
+      "description": "A sword with a cracked hilt and dulled blade. It has seen better days.",
+      "buy_price": 50,
+      "sell_price": 25,
+      "damage": 5,
+      "defense": 0
+    },
+    {
+      "id": "blue_wrap_knife",
+      "name": "Blue-Wrap Knife",
+      "description": "A small, well-used knife with a handle wrapped in faded blue cloth. ",
+      "buy_price": 5,
+      "sell_price": 10,
+      "damage": 3,
+      "defense": 0
+    }
+  ],
+  "equipped": "Rusty Sword",
+  "damage": 5,
+  "battle": null,
+  "xp": 5,
+  "level": 2,
+  "max_hp": 110,
+  "hp": 110
+}

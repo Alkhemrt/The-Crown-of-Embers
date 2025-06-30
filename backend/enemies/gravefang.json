@@ -1,0 +1,33 @@
+{
+  "name": "Gravefang",
+  "hp": 50,
+  "xp": [20, 20],
+  "gold": [30, 30],
+  "behavior": "aggressive",
+  "moves": [
+    {
+      "name": "Boneclaw Slash",
+      "damage": 6
+    },
+    {
+      "name": "Cinder Gaze",
+      "damage": 0,
+      "effect": "Stun"
+    },
+    {
+      "name": "Lunging Rend",
+      "damage": 12,
+      "warn": "The Gravefang coils, then launches itself at you..."
+    },
+    {
+      "name": "Carrion Bite",
+      "damage": 12,
+      "warn": "The Gravefang snaps forward, jaws aimed for your throat..."
+    },
+    {
+      "name": "Bloodstained Roar",
+      "damage": 2,
+      "effect": "Weakness"
+    }
+  ]
+}

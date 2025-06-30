@@ -1,0 +1,9 @@
+{
+  "id": "blue_wrap_knife",
+  "name": "Blue-Wrap Knife",
+  "description": "A small, well-used knife with a handle wrapped in faded blue cloth. You found it at a camp near the forest. A torn note beside it mentioned someone named Elira. Maybe she's still in Vehlmoor.",
+  "buy_price": 5,
+  "sell_price": 10,
+  "damage": 3,
+  "defense": 0
+}
